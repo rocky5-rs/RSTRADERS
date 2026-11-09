@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RS TRADERS connects farmers with tractor, JCB, harvester and agricultural equipment rental providers in Murshidabad and nearby areas.">
+<title>RS TRADERS | Agricultural Equipment Rental</title>
+<style>
+:root{--green:#173f32;--green2:#245b45;--gold:#d8ad53;--cream:#f6f5ef;--ink:#18231e;--muted:#66736c;--white:#fff;--line:#e5e9e4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{width:min(1140px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.5px;color:var(--green);font-size:21px}
+.logo{width:42px;height:42px;border-radius:12px;background:var(--green);color:var(--gold);display:grid;place-items:center;font-weight:900}
+nav{display:flex;gap:24px;align-items:center;font-size:14px;font-weight:700;color:#46544c}
+nav a:hover{color:var(--green2)}.navcta,.btn{display:inline-flex;justify-content:center;align-items:center;background:var(--gold);color:#18231e;padding:12px 18px;border-radius:9px;font-weight:800;border:0;cursor:pointer}
+.menu{display:none;background:none;border:0;font-size:25px}
+.hero{background:linear-gradient(110deg,rgba(12,38,29,.95),rgba(19,62,47,.84)),url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=85') center/cover;color:white;padding:82px 0 65px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(38px,5vw,62px);line-height:1.08;margin:14px 0 18px;letter-spacing:-1.8px}
+.hero p{font-size:17px;color:#e0e8e2;max-width:610px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn-outline{display:inline-flex;align-items:center;justify-content:center;border:1px solid #dce8df;color:#fff;padding:12px 18px;border-radius:9px;font-weight:800}
+.hero-card{background:#fff;color:var(--ink);padding:25px;border-radius:18px;box-shadow:0 22px 55px #071b1450}
+.hero-card h3{margin:0 0 14px;font-size:20px}.searchrow{display:grid;gap:10px}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid #dce2dc;border-radius:9px;background:#fff;font:inherit;color:var(--ink)}
+label{font-size:13px;font-weight:800;display:block;margin:10px 0 6px}
+section{padding:72px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 34px}
+.section-head h2{font-size:clamp(28px,3vw,39px);margin:7px 0 10px;color:var(--green)}
+.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:15px;overflow:hidden;background:#fff;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 32px #183d2b12}
+.card img{width:100%;height:160px;object-fit:cover;background:#e8eee8}
+.card-body{padding:17px}.card h3{margin:0 0 5px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:13px}
+.tag{display:inline-block;margin-top:12px;background:#eef5ef;color:var(--green);padding:5px 9px;border-radius:20px;font-size:11px;font-weight:800}
+.how{background:var(--cream)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{background:#fff;padding:23px;border-radius:14px;border:1px solid var(--line)}
+.num{width:36px;height:36px;border-radius:10px;background:var(--green);color:var(--gold);display:grid;place-items:center;font-weight:900}
+.step h3{margin:13px 0 6px}.step p{color:var(--muted);font-size:14px;margin:0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch}
+.panel{padding:30px;border-radius:18px;background:var(--green);color:white}
+.panel h2{font-size:30px;line-height:1.15;margin:8px 0 12px}.panel p{color:#dce7df}
+.panel .btn{margin-top:12px}.formpanel{border:1px solid var(--line);border-radius:18px;padding:26px}
+.formpanel h3{margin:0 0 5px;font-size:22px}.formpanel .hint{color:var(--muted);font-size:13px;margin:0 0 15px}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+.full{grid-column:1/-1}.submit{width:100%;margin-top:15px}
+.note{font-size:12px;color:var(--muted);margin-top:10px}
+.why{background:#f8faf8}.whygrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.whyitem{padding:22px;background:white;border:1px solid var(--line);border-radius:14px}.whyitem b{display:block;margin:8px 0}.whyitem span{font-size:14px;color:var(--muted)}
+.contact{background:#142f25;color:white}.contactgrid{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+.contact h2{font-size:34px;margin:8px 0}.contact p{color:#d5e0d9}.contactbox{border:1px solid #496457;padding:22px;border-radius:14px}
+footer{background:#0d211a;color:#cbd7cf;padding:24px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.whatsapp{position:fixed;right:18px;bottom:18px;z-index:30;background:#1fa855;color:white;padding:13px 17px;border-radius:50px;font-weight:900;box-shadow:0 8px 25px #0003}
+.toast{display:none;margin-top:12px;padding:12px;background:#eef5ef;border-radius:8px;color:var(--green);font-size:13px}
+@media(max-width:850px){nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:18px 4%;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}nav.open{display:flex}.menu{display:block}.navcta{display:none}.hero-grid,.split,.contactgrid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.hero{padding:58px 0}.hero-card{max-width:560px}}
+@media(max-width:560px){section{padding:55px 0}.cards,.steps,.whygrid{grid-template-columns:1fr 1fr}.card img{height:125px}.card-body{padding:13px}.steps{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.hero-grid{gap:28px}.hero-card{padding:19px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home"><span class="logo">RS</span><span>RS TRADERS<small style="display:block;font-size:9px;letter-spacing:2px;color:#7a887f">AGRI EQUIPMENT RENTAL</small></span></a>
+  <button class="menu" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Open menu">☰</button>
+  <nav><a href="#home">Home</a><a href="#machines">Machines</a><a href="#how">How It Works</a><a href="#list">List Your Machine</a><a href="#contact">Contact</a></nav>
+  <a class="navcta" href="#machines">Find a Machine ↗</a>
+ </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow">Your local farm equipment rental platform</div>
+   <h1>The Right Machine<br>For Every Farm.</h1>
+   <p>Find tractors, JCBs, paddy harvesters and agricultural equipment for rent. Connect directly with local machine owners through RS TRADERS.</p>
+   <div class="hero-actions"><a class="btn" href="#machines">Explore Machines</a><a class="btn-outline" href="#list">List Your Machine</a></div>
+  </div>
+  <div class="hero-card">
+   <h3>Find equipment near you</h3>
+   <div class="searchrow">
+    <label for="machineSearch">Machine type</label>
+    <select id="machineSearch"><option value="">Select equipment</option><option>Tractor</option><option>JCB / Excavator</option><option>Paddy Harvester</option><option>Power Tiller</option><option>Rotavator</option><option>Thresher</option><option>Other equipment</option></select>
+    <label for="locationSearch">Your location</label><input id="locationSearch" placeholder="Enter village / area">
+    <button class="btn" onclick="searchMachines()">Search Machines</button>
+    <div class="note">Search currently helps you send an enquiry. Live listings will appear as equipment owners register.</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="machines">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">Equipment categories</div><h2>Explore Rental Machines</h2><p>Choose the equipment you need for your field, land preparation, harvesting or construction work.</p></div>
+  <div class="cards">
+   <article class="card"><img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0a4a7b?auto=format&fit=crop&w=700&q=80" alt="Tractor in a field"><div class="card-body"><h3>Tractor</h3><p>Field preparation, hauling and farm work.</p><span class="tag">Available on enquiry</span></div></article>
+   <article class="card"><img src="https://images.unsplash.com/photo-1580901368919-7738efb0f87e?auto=format&fit=crop&w=700&q=80" alt="Excavator machine"><div class="card-body"><h3>JCB / Excavator</h3><p>Earthmoving, digging and site work.</p><span class="tag">Available on enquiry</span></div></article>
+   <article class="card"><img src="https://images.unsplash.com/photo-1530267981375-f0de937f5f13?auto=format&fit=crop&w=700&q=80" alt="Harvester in crop field"><div class="card-body"><h3>Paddy Harvester</h3><p>Rice harvesting and seasonal farm work.</p><span class="tag">Available on enquiry</span></div></article>
+   <article class="card"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=700&q=80" alt="Green agricultural field"><div class="card-body"><h3>Power Tiller</h3><p>Small-field cultivation and soil preparation.</p><span class="tag">Available on enquiry</span></div></article>
+   <article class="card"><img src="https://images.unsplash.com/photo-1595007082207-1b5f8f9e9d2d?auto=format&fit=crop&w=700&q=80" alt="Farm machinery"><div class="card-body"><h3>Rotavator</h3><p>Soil mixing and land preparation.</p><span class="tag">Available on enquiry</span></div></article>
+   <article class="card"><img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0a4a7b?auto=format&fit=crop&w=700&q=80" alt="Agricultural machinery"><div class="card-body"><h3>Thresher</h3><p>Crop threshing and grain separation.</p><span class="tag">Available on enquiry</span></div></article>
+   <article class="card"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=700&q=80" alt="Agricultural land"><div class="card-body"><h3>Other Farm Tools</h3><p>List or enquire about other useful equipment.</p><span class="tag">On request</span></div></article>
+   <article class="card"><img src="https://images.unsplash.com/photo-1523742810063-6f6c1a7f4f7c?auto=format&fit=crop&w=700&q=80" alt="Agriculture"><div class="card-body"><h3>More Equipment</h3><p>More categories can be added as the network grows.</p><span class="tag">Growing network</span></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="how" id="how">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">Simple process</div><h2>How RS TRADERS Works</h2><p>A simple way for farmers to find equipment and owners to reach customers.</p></div>
+  <div class="steps">
+   <div class="step"><div class="num">01</div><h3>Choose a Machine</h3><p>Select the equipment category and tell us your village, work date and requirements.</p></div>
+   <div class="step"><div class="num">02</div><h3>Connect With the Owner</h3><p>Ask about availability, rental rate, operator, transport and other terms before confirming.</p></div>
+   <div class="step"><div class="num">03</div><h3>Confirm Your Booking</h3><p>Agree directly with the machine owner and confirm the booking details.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="list">
+ <div class="wrap split">
+  <div class="panel">
+   <div class="eyebrow">For machine owners</div>
+   <h2>Have a Tractor, JCB or Harvester?</h2>
+   <p>Grow your rental business. Submit your machine details to RS TRADERS and get enquiries from farmers looking for equipment in your area.</p>
+   <p><b>List your equipment:</b> tractor, JCB, paddy harvester, power tiller, rotavator, thresher and more.</p>
+   <a class="btn" href="#ownerForm">List Your Machine →</a>
+  </div>
+  <div class="formpanel" id="ownerForm">
+   <h3>Register Your Machine</h3><p class="hint">Submit your details for review. Listing is not automatic; RS TRADERS will contact you to verify information.</p>
+   <form id="listingForm">
+    <div class="formgrid">
+     <div><label>Owner name *</label><input name="owner" required placeholder="Your full name"></div>
+     <div><label>Mobile number *</label><input name="phone" required type="tel" placeholder="10-digit mobile number"></div>
+     <div><label>Machine type *</label><select name="type" required><option value="">Choose machine</option><option>Tractor</option><option>JCB / Excavator</option><option>Paddy Harvester</option><option>Power Tiller</option><option>Rotavator</option><option>Thresher</option><option>Other</option></select></div>
+     <div><label>Rental rate</label><input name="rate" placeholder="e.g. ₹ per hour / bigha / day"></div>
+     <div class="full"><label>Village / Location *</label><input name="location" required placeholder="Village, block, district"></div>
+     <div class="full"><label>Machine details</label><textarea name="details" rows="3" placeholder="Model, availability, with/without operator, service area..."></textarea></div>
+    </div>
+    <button class="btn submit" type="submit">Submit Machine Details</button>
+    <div class="toast" id="listingToast">Your details are prepared. Please connect the site's WhatsApp number to send this enquiry.</div>
+   </form>
+   <p class="note">This form opens WhatsApp with the submitted details. Listings are not automatically published; RS TRADERS should review and approve each machine.</p>
+  </div>
+ </div>
+</section>
+
+<section class="why">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">Why choose us</div><h2>Built Around Local Farming Needs</h2><p>RS TRADERS aims to make equipment discovery easier for farmers and rental enquiries easier for machine owners.</p></div>
+  <div class="whygrid">
+   <div class="whyitem">🚜<b>Multiple Equipment Types</b><span>Explore different machines for farm and land work in one place.</span></div>
+   <div class="whyitem">📍<b>Local Connections</b><span>Find machine owners serving your village and nearby areas.</span></div>
+   <div class="whyitem">🤝<b>Owner Listings</b><span>Give equipment owners a way to submit their machines for listing.</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap contactgrid">
+  <div><div class="eyebrow">Get in touch</div><h2>Need a Machine?<br>Let's Get to Work.</h2><p>Contact RS TRADERS for equipment rental enquiries, machine owner registration and service-area information.</p></div>
+  <div class="contactbox"><h3>RS TRADERS</h3><p><b>Address</b><br>Erera, Shimulia, Murshidabad,<br>West Bengal, India</p><p><b>WhatsApp / Phone</b><br><a href="https://wa.me/918116157776" target="_blank" rel="noopener">+91 81161 57776</a></p><p><b>Business</b><br>Agricultural Equipment Rental Marketplace</p></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap foot"><span>© 2026 RS TRADERS. All rights reserved.</span><span>Agricultural Equipment Rental Platform · Erera, Murshidabad</span></div></footer>
+<a class="whatsapp" href="https://wa.me/918116157776?text=Hello%20RS%20TRADERS%2C%20I%20want%20to%20enquire%20about%20equipment%20rental." target="_blank" rel="noopener" aria-label="WhatsApp contact">WhatsApp</a>
+<script>
+function searchMachines(){
+ const type=document.getElementById('machineSearch').value;
+ const loc=document.getElementById('locationSearch').value;
+ const msg=`Hello RS TRADERS, I need to rent ${type||'agricultural equipment'}. My location is ${loc||'not specified'}. Please share availability and rental rates.`;
+ alert(msg+'\\n\\nAdd your WhatsApp number to activate direct enquiry.');
+}
+document.getElementById('listingForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const data=Object.fromEntries(new FormData(this).entries());
+ document.getElementById('listingToast').style.display='block';
+ const msg = `Hello RS TRADERS, I want to list my machine for rent.\nOwner: ${data.owner}\nPhone: ${data.phone}\nMachine: ${data.type}\nRental rate: ${data.rate}\nLocation: ${data.location}\nDetails: ${data.details}`;
+ window.open('https://wa.me/918116157776?text='+encodeURIComponent(msg),'_blank');
+});
+</script>
+</body></html>
